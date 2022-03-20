@@ -28,7 +28,7 @@ Regarding my contribution:
 
 | The Secret Garden                   | I did the animation on the water drops and the connection to the watercan animated by Yoana.  |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Validated4.0 & Validated Responsive | My part was the creation of Home, Navbar and the footer.                                      |
+| **Validated4.0 & Validated Responsive** | **My part was the creation of Home, Navbar and the footer.**                                      |
 
 ## Other projects
 Some of the following projects are only existing on a webhost.
