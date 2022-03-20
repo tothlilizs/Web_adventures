@@ -1,0 +1,56 @@
+/* Yoana */
+/* Stop fucking with my code without teling me ffs*/
+#service-page{
+    margin: 1vw;
+}
+textarea{
+    resize: none;
+}
+
+.reviews{
+    text-align: left;
+    font-size: 0.8em;
+    font-family: monotype corsiva;
+    margin: 5px;
+}
+
+#service-table, .yos-th, .yos-tr{
+    border-style: solid;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    padding: 0px;
+    text-align: start;
+    margin: 2vw;;
+}
+.user{
+    height: 100px;
+}
+#service-list{
+    margin: 0.8vw;
+    font-size: 1.3em
+}
+.offers{
+    margin: 1vw;
+    font-size: 1.5em;
+}
+
+.button {
+  background-color: #6699FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: monotype corsiva;
+  transition-duration: 0.4s;
+  margin-left: 5px;
+}
+.button:hover{
+  background-color: whitesmoke;
+  color: black;
+  border-style: solid;
+  border-color: #6699FF;
+}
+/*if you have scrolled til here and had made some changes you either DO NOT save it or fucking tell me, via email: 304132@via.dk - Yo */

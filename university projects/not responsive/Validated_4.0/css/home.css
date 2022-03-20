@@ -1,0 +1,50 @@
+/* mostly Lili & minorly Allie */
+.maincontent{
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: static;
+    
+    
+    
+}
+
+.seccontent{
+    float: left;
+    width: 50%;
+    height: 100%;
+    
+}
+    
+#mainpic{
+    height: 330px;
+    width: auto;
+    border: 5px solid black;
+}
+
+.eventpic{
+    height:150px;
+    width: 300px;
+    border: black 2px solid;
+}
+
+.impostorcarousel{
+   padding-left: 50px;
+   background-color: whitesmoke;
+   font-size: 1.25em;
+
+}
+
+.news{
+    text-align: center;
+}
+
+.table{
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    border-LEFT: 5px solid black;
+    padding-bottom: 150px;
+    background-color: whitesmoke;
+}

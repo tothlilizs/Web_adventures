@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rajzoló program</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#rajzTerulet{
+		width: 550px;
+	}
+	#szerkeszto{
+		height: 30px ;
+	}	
+
+.szinv{
+	width: 25px;
+	height:25px;
+	border: 1px solid #fff;
+	float: left;
+}
+.pixel{
+	width: 25px;
+	height:25px;
+	border: 1px solid #fff;
+	float: left;
+	background-color: #ccc;
+	color: #000;
+}
+.alap{
+	background-color: #ccc;
+}
+.piros{
+	background-color: #FF0000;
+}
+.kek{
+	background-color: #0000ff;
+}
+.zold{
+	background-color: #00ff00;
+}
+
+
+	</style>
+</head>
+<body>
+Méret: <input type="text" name="meret" id="meret" value="20"><br/>
+<button onclick="rajzol(document.getElementById('meret').value)">Rajzol</button>
+
+<div id="szerkeszto">
+	<div class="szinv piros" onclick="szinvalaszto('#FF0000')"></div>
+	<div class="szinv kek" onclick="szinvalaszto('#0000FF')"></div>
+	<div class="szinv zold" onclick="szinvalaszto('#00ff00')"></div>
+	<div class="szinv alap" onclick="szinvalaszto('#ccc')"></div>
+	<div class="szinv "></div>
+	<div class="szinv piros" id="vszin"></div>
+</div>
+	
+
+
+<div id="rajzTerulet"></div>
+
+<script type="text/javascript">
+	var meret=20;
+	var szin="#FF0000";
+var htmlKod="";
+	function rajzol(meret){
+		htmlKod="";
+for (var i = 0; i <meret; i++) {
+	for (var j = 0; j < meret; j++) {
+		htmlKod+="<div class='pixel' id='pix-"+(meret*i+j)+"' onclick='szinez("+(meret*i+j)+")'></div>";
+	}
+}
+document.getElementById("rajzTerulet").style.width=27*meret+"px";
+document.getElementById("rajzTerulet").innerHTML=htmlKod;
+}
+
+function szinvalaszto(szine){
+szin=szine;
+document.getElementById('vszin').style="background-color:"+ szine;
+}
+
+function szinez(index){
+	document.getElementById('pix-'+index).style="background-color:"+ szin;
+}
+
+</script>
+</body>
+</html>

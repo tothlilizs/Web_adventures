@@ -1,0 +1,10 @@
+/* Yoana */
+body{
+    background-color: whitesmoke;
+}
+#service-page{
+   margin: 1vw;
+}
+textarea{
+    resize: none;
+}

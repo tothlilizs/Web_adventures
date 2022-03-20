@@ -1,0 +1,300 @@
+<!-- Luke -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <link href="css/NavFooter.css" type="text/css" rel="stylesheet">
+    <link href="css/Luke.css" type="text/css" rel="stylesheet">
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+    <body>
+<!--         Navigation bar is included in every page -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <a href="Home.html" class="navbar-brand"><img src="pictures/smallLogo1.0.png" alt = "Colour IT Logo"></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#burger" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="burger">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="ProjectOverview.html" aria-disabled="true"><h1 class="nav-h1">Projects</h1><span class="sr-only">Current page</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="DevTeam.html"><h1 class="nav-h1">Development Team</h1></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Services.html"><h1 class="nav-h1">Services</h1></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+        <div class="dev">
+            <h1 id="project">Projects' Overview</h1>
+<!--            Create an accordion to contain all of the relevant information about projects-->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link links" data-toggle="collapse" href = "#collapseOne">
+<!--                            The title of the collapsible tab that is visible from the get go-->
+                        Flying to The Moon
+                        </a>
+                        </div>
+                  <div id="collapseOne" class = "collapse" data-parent="#accordion">
+<!--                      Contains all of the information that is within the tab-->
+                    <div class = "card-body">
+                      <b>Description:</b> Interplanetary travel
+                        <br>
+                        <b>Status:</b> Started
+                        <br>
+                        <b>Deadline:</b> 2023
+                        <br>
+                        <br>
+<!--                        The bootstrap table that contains the requirements relevant to the project-->
+                        <table class= "table table-striped table-dark font">
+                        <thead>
+                            <tr>
+                                <th>Requirements</th>
+                                <th>Classification</th>
+                                <th>Status</th>
+                                <th>Deadline</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Getting a shuttle</td>
+                                    <td>Functional</td>
+                                    <td>Started</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr class>
+                                    <td>Gathering a crew</td>
+                                    <td>Non-Functional</td>
+                                    <td>Completed</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Finding the flag</td>
+                                    <td>Optional</td>
+                                    <td>Not Started</td>
+                                    <td>2023</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                        
+                      </div>
+                    </div>  
+                    </div>
+<!--                And this jolly process is repeated another three times for each project-->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link links" data-toggle="collapse" href = "#collapseTwo">
+                        World Domination
+                        </a>
+                        </div>
+                  <div id="collapseTwo" class = "collapse" data-parent="#accordion">
+                    <div class = "card-body">
+                      <b>Description:</b> Nefarious plot
+                        <br>
+                        <b>Status:</b> Started
+                        <br>
+                        <b>Deadline:</b> 2026
+                        <br>
+                        <br>
+                        <table class= "table table-striped table-dark font">
+                        <thead>
+                            <tr>
+                                <th>Requirements</th>
+                                <th>Classification</th>
+                                <th>Status</th>
+                                <th>Deadline</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hoard kittens</td>
+                                    <td>Functional</td>
+                                    <td>Ended</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Promise free candy</td>
+                                    <td>Non-Functional</td>
+                                    <td>Started</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Initiate hypno toad</td>
+                                    <td>Functional</td>
+                                    <td>Not Started</td>
+                                    <td>2026</td>
+                                </tr>
+                                 <tr>
+                                    <td>Perfect evil laugh</td>
+                                    <td>Non-Functional</td>
+                                    <td>Ended</td>
+                                    <td>N/A</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+    
+                        
+                      </div>
+                    </div>  
+                    </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link links" data-toggle="collapse" href = "#collapseThree">
+                        Project Management System
+                        </a>
+                        </div>
+                  <div id="collapseThree" class = "collapse" data-parent="#accordion">
+                    <div class = "card-body">
+                      <b>Description:</b> Improving development process
+                        <br>
+                        <b>Status:</b> Started
+                        <br>
+                        <b>Deadline:</b> 2029
+                        <br>
+                        <br>
+                        <table class= "table table-striped table-dark font">
+                        <thead>
+                            <tr>
+                                <th>Requirements</th>
+                                <th>Classification</th>
+                                <th>Status</th>
+                                <th>Deadline</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Manage projects</td>
+                                    <td>Functional</td>
+                                    <td>Ended</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Assign team members</td>
+                                    <td>Functional</td>
+                                    <td>Started</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Edit requirements</td>
+                                    <td>Functional</td>
+                                    <td>Not Started</td>
+                                    <td>2026</td>
+                                </tr>
+                                 <tr>
+                                    <td>Updating Website</td>
+                                    <td>Non-Functional</td>
+                                    <td>Ended</td>
+                                    <td>2026</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                        
+                      </div>
+                    </div>  
+                    </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link links" data-toggle="collapse" href = "#collapseFour">
+                        Global Mutiny
+                        </a>
+                        </div>
+                  <div id="collapseFour" class = "collapse" data-parent="#accordion">
+                    <div class = "card-body">
+                      <b>Description:</b> Full on rebellion against the invader
+                        <br>
+                        <b>Status:</b> Started
+                        <br>
+                        <b>Deadline:</b> 2026
+                        <br>
+                        <br>
+                        <table class= "table table-striped table-dark font">
+                        <thead>
+                            <tr>
+                                <th>Requirements</th>
+                                <th>Classification</th>
+                                <th>Status</th>
+                                <th>Deadline</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Find something to rebel against</td>
+                                    <td>Functional</td>
+                                    <td>Ended</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Arrange time and place</td>
+                                    <td>Non-Functional</td>
+                                    <td>Started</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock up on pointy things</td>
+                                    <td>Functional</td>
+                                    <td>Not Started</td>
+                                    <td>2026</td>
+                                </tr>
+                                 <tr>
+                                    <td>Rehearse the victory pose</td>
+                                    <td>Project's Requirement</td>
+                                    <td>Ended</td>
+                                    <td>2022</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                        
+                      </div>
+                    </div>  
+                    </div>
+                </div>
+        </div>
+
+<!--        The footer is included in every page-->
+       <footer class="container-fluid">
+       <div class="row bg-primary">
+           <div class="col-lg-3">
+               <h1>Contact us</h1>
+               <h4>
+                   <a href="https://www.facebook.com/Color-It-103901364869238" class="text-white">Facebook</a><br>
+                   <a href="https://twitter.com/ColorIT43135576" class="text-white">Twitter</a>
+                   <br>
+                   <br>Phone: +45 12 34 56 78
+                   <br>Customer service:
+                   <br>Monday - Thursday: 09:00 - 17:30
+                   <br>Friday: 09:00 - 16:30
+                   <br>Lunch break: 12:00 - 12:30
+               </h4>
+           </div>
+           <div class="col-lg-5" >
+               <h1>About us</h1>
+               <h4>
+                   Colour IT is a small local company who develops and implements IT systems for a mostly private clientele. No matter the scope of a project we will do our utmost to realize your ideas.
+                   <br>Our developers are a tight-knit and dedicated group of colourful individuals who are always up for a challenge. Their top priority is to ensure that finished projects are of the highest quality and our clients are satisfied with their product.
+                   <br>We strive to put a smile on your face and a splash of colour in your day!
+               </h4>
+           </div>
+           <div class="col-lg-4 fixm">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_canvas" src="https://maps.google.com/maps?q=via%20university&t=&z=15&ie=UTF8&iwloc=&output=embed" ></iframe><a href="https://embedgooglemap.net/mapv2/"></a></div></div>
+           </div>
+       </div>
+    </footer>
+    </body>
+</html>

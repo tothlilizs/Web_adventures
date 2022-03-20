@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>"Title"</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+    nav {
+      height: 50px;
+      width: 100%;
+    }
+
+    .nav-container {
+      height: 50px;
+      width: 100%;
+      display: table;
+    }
+    .center-block {
+      display: table;
+      margin: 0 auto;
+    }
+    body{
+      background-color: lightgrey;
+    }
+    .carousel-inner > .item > img {
+      width:650px;
+      height:370px;
+    }
+  	.affix {
+   	  top: 0;
+ 	    width: 100%;
+  	  z-index: 9999 !important;
+ 	  }
+
+ 	.affix + .container-fluid {
+ 	   padding-top: 70px;
+ 	 }
+ 	 </style>
+</head>
+
+<body>
+<div class="container-fluid" style="background-color:#F9856B;color:#fff;height:200px;"> 
+  <h1>Pets up for adoption</h1>
+  <p>Are you moving or maybe for some reason can't keep your pet but want a good home for him/her? Well this is the place for you!</p>
+</div>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">PetProject</a>
+    </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Adoptables<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+          <li><a href="#">Cats</a></li>
+          <li><a href="#">Dogs</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+    <li><a href="#">About</a></li>    
+  </ul>
+
+  <ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" data-target="#SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+
+          <div class="modal fade" id="SignIn" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Sign In</h4>
+                </div>
+                <div class="modal-body">
+                  <form action="/action_page.php">
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+      <li><a data-toggle="modal" data-target="#SignIn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+       <div class="modal fade" id="SignUp" role="dialog">
+          <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Sign In</h4>
+              </div>
+              <div class="modal-body">
+               <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd">
+                </div>      
+                <button type="submit" class="btn btn-default">Submit</button>
+               </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      
+  </ul>
+    </div>
+    
+  </div>
+  </ul>
+    </div>
+    
+  </div>
+</nav>
+<div class="container-fluid" style="height:50%" >
+   <h3>This is a site built for those who cant keep their pet because of leaving the country, due to health, or financial reasons.</h3>
+   <div class="well">
+     <p>We will help find them a new loving home! We will not let any pet out without confirming that they will have a good and sure home which can take care of them even if they get sick and dont abandon them. We also provide shelter for the pets until they can find a new family. Because of that sadly we can only welcome a restricted number of pets at a time. For further information and ways to contact us please check out the "About" part of the site!</p>    
+   </div>
+   <div class="center-block">
+    <h1 style="text-align: center;"> <span class="glyphicon glyphicon-home"></span><span class="glyphicon glyphicon-heart-empty"></span></h1>
+    <h1 >Pets looking for a family:<br></h1>
+    <h1 style="text-align: center;"><span class="label label-default" >3</span></h1><br>
+   </div>
+</div>
+
+
+<div class="container" style="height:50%">
+
+  <div class="row">
+
+    <div class="col-sm-4 col-sx-4 col-md-4 col-lg-4">
+
+    	<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/tyler1.jpg" alt="Tyler hiding" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/tyler2.jpg" alt="Tyler sitting majestically" style="width:100%;">
+      </div>
+
+    <div class="item">
+        <img src="images/tyler3.jpg" alt="Tyler sitting" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/tyler4.jpg" alt="Tyler being a lazy fatass" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/tyler5.jpg" alt="Tyler being handsome" style="width:100%;">
+      </div>
+
+    </div>
+
+    
+    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>    
+  </div>
+
+      <h3>Tyler</h3>
+      <blockquote>
+  		  <p><kbd>cat type:</kbd> British Shorthair<br><kbd>short bio:</kbd>  He is a very chill cat. He is friendly thowards most people and can be kept with other animals after introduction. However he is a very lazy cat and known arm number. So he will hunt down any working person and sleep on their unprotected arms or lap, causing numbness and mild warmth. Also he is a good learner so tricks can be taught to him.</p>
+    	  <footer>Known as Dumbass</footer>
+    	  <button type="button" class="btn btn-link">More info</button>
+  	  </blockquote>
+    </div>
+
+    <div class="col-sm-4 col-sx-4 col-md-4 col-lg-4">
+
+    	<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+   
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/fanni1.jpg" alt="Fanni sitting on her throne" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/fanni2.jpg" alt="Fanni with her crown" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/fanni3.jpg" alt="Fanni in the royal jewelery" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/fanni4.JPG" alt="Fanni being interested in her subjects" style="width:100%;">
+      </div>
+
+    </div>
+
+   
+    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+      <h3>Fanni</h3>
+       <blockquote>
+    		<p><kbd>cat type:</kbd> Domestic House Cat<br><kbd>short bio:</kbd> She is known to be  a very gentle cat. Probably the friendliest cat you ever met. She is very good with kids and is very calm no matter what. She is an outdoors cat so she is used to living outside or in a garden. However she is a quite old cat and requires attention. Also visits to the vet can be needed in the future since her age. She is very gracefull even if she is an elder.</p>
+      	<footer>Known as Queen of the Backyard</footer>
+      	<button type="button" class="btn btn-link">More info</button>
+    	 </blockquote>
+    </div>
+
+    <div class="col-sm-4 col-sx-4 col-md-4 col-lg-4">
+    	<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+   
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/tiny1.jpg" alt="Tiny does a sleep" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/tiny2.jpg" alt="Tiny is fat" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/tiny3.jpg" alt="Tiny looking" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/tiny4.jpg" alt="Tiny bein young and effin adorbs" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/tiny5.jpg" alt="Tiny is very damn fat" style="width:100%;">
+      </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  
+    </div>
+      <h3>Dorian</h3>
+      <blockquote>
+    		<p><kbd>cat type:</kbd> British Shorthair<br><kbd>short bio:</kbd>  He is a very fat cat, but he is not obese. He is the perfect fat and furr ratio. He is a very lazy cat so he will spend the day sleeping or napping. He is also quite a chicken so he will be scared by most things on the contrary he is very playfull and full of love he will search for you while chirping and when he finds you he will crawl next to you and happily purr. </p>
+      	<footer>Known as Tiny</footer>
+      	<button type="button" class="btn btn-link">More info</button>
+  	  </blockquote>
+   </div>   
+    
+  </div>
+</div>
+<div class= "col-sm-12 col-sx-12 col-md-12 col-lg-12" style="background-color: white" style="height: 300px">
+  <div class="panel-group">
+    <div class="panel panel-default">
+       <div class="panel-heading">
+          <h4 class="panel-title">
+           <a data-toggle="collapse" href="#collapse1" class="center-block" style="height:50px" style="text-align: center;">Additional Information</a>
+          </h4>
+       </div>
+       <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body" style="background-color:#C789F8">
+           It`s a joke i am not giving my cats away. Also while this was made i was petting Tyler so don`t worry he is loved and would never be given away. Tiny is also not going anywhere. Fanni has sadly passed away 5 years ago, this was a tribute to her she was my first cat and friend, she'll never leave my heart.
+          </div>
+          <div class="panel-footer">
+           Thank you for your time.
+          </div>
+       </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

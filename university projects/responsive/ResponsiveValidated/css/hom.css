@@ -1,0 +1,19 @@
+.ih{
+    height: 500px;
+}
+
+.eventpic{
+    height:150px;
+    width: 300px;
+    border: black 2px solid;
+}
+
+.news{
+    text-align: center;
+}
+
+.fix{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}

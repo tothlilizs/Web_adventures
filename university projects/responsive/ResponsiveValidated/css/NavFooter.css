@@ -1,0 +1,53 @@
+/*Allie*/
+
+body {
+    background-color: whitesmoke;
+    max-width: 99.95%
+}
+
+footer {
+    margin-top: 3em;
+}
+
+h1 {
+    font-family: monotype corsiva;
+    margin: 0.3em 0.3em 0.3em 0;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+ul {
+    text-align: justify;
+}
+
+.pic {
+    border: solid 5px black;
+    padding: 0;
+}
+
+.col {
+    margin: 1em;
+}
+
+/*Lil*/
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:400px;
+    width:400px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:400px;
+}
+
+.fixm{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ 

@@ -1,0 +1,30 @@
+/*Allie*/
+
+.dev {
+    font-family: monotype corsiva;
+}
+
+.card {
+    padding: 0;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-text {
+    font-size: 1.7em;
+}
+
+.cen {
+    text-align: center;
+}
+
+.head {
+    margin: 1em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.2em;
+}
